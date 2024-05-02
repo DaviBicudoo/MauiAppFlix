@@ -57,13 +57,24 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <AndroidJavaSource Remove="Sla\**" />
+	  <AndroidLibrary Remove="Sla\**" />
+	  <AndroidNativeLibrary Remove="Sla\**" />
+	  <Compile Remove="Sla\**" />
+	  <EmbeddedResource Remove="Sla\**" />
+	  <JavaSourceJar Remove="Sla\**" />
+	  <None Remove="Sla\**" />
+	  <ProguardConfiguration Remove="Sla\**" />
+	  <TransformFile Remove="Sla\**" />
+	</ItemGroup>
+
+	<ItemGroup>
 		<PackageReference Include="Microsoft.Maui.Controls" Version="$(MauiVersion)" />
 		<PackageReference Include="Microsoft.Maui.Controls.Compatibility" Version="$(MauiVersion)" />
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="8.0.0" />
 	</ItemGroup>
 
 	<ItemGroup>
-	  <Folder Include="Sla\" />
 	  <Folder Include="Posters\" />
 	</ItemGroup>
 
