@@ -12,28 +12,22 @@
 
     <ContentPage.Resources>
         <Style TargetType="Button">
-            <Setter Property="BackgroundColor" Value="Green"/>
+            <Setter Property="BackgroundColor" Value="DarkOrange"/>
             <Setter Property="TextColor" Value="White"/>
             <Setter Property="FontSize" Value="20"/>
         </Style>
     </ContentPage.Resources>
 
     <ScrollView>
-        <Grid RowDefinitions="*, *, *, *, *, *" ColumnDefinitions="*, *"
+        <Grid RowDefinitions="*, *, *" ColumnDefinitions="*, *"
               VerticalOptions="FillAndExpand" Padding="5">
-            <Button x:Name="btn00" Grid.Row="0" Grid.Column="0" Text="Scifi"/>
-            <Button x:Name="btn10" Grid.Row="1" Grid.Column="0" Text="Drama"/>
-            <Button x:Name="btn20" Grid.Row="2" Grid.Column="0" Text="Adventure"/>
-            <Button x:Name="btn30" Grid.Row="3" Grid.Column="0" Text="Child"/>
-            <Button x:Name="btn40" Grid.Row="4" Grid.Column="0" Text="Animation"/>
-            <Button x:Name="btn50" Grid.Row="5" Grid.Column="0" Text="Comedy"/>
+            <Button x:Name="fantasyButton" Grid.Row="0" Grid.Column="0" Text="Fantasy and Adventure"/>
+            <Button x:Name="animationButton" Grid.Row="1" Grid.Column="0" Text="Animation"/>
+            <Button x:Name="comedyButton" Grid.Row="2" Grid.Column="0" Text="Comedy"/>
 
-            <Button x:Name="btn01" Grid.Row="0" Grid.Column="1" Text="Nacional"/>
-            <Button x:Name="btn11" Grid.Row="1" Grid.Column="1" Text="Terror"/>
-            <Button x:Name="btn21" Grid.Row="2" Grid.Column="1" Text="Romance"/>
-            <Button x:Name="btn31" Grid.Row="3" Grid.Column="1" Text="Documentary"/>
-            <Button x:Name="btn41" Grid.Row="4" Grid.Column="1" Text="War"/>
-            <Button x:Name="btn51" Grid.Row="5" Grid.Column="1" Text="Fear"/>
+            <Button x:Name="terrorButton" Grid.Row="0" Grid.Column="1" Text="Terror"/>
+            <Button x:Name="warButton" Grid.Row="1" Grid.Column="1" Text="War"/>
+            <Button x:Name="romanceButton" Grid.Row="2" Grid.Column="1" Text="Romance"/>
         </Grid>
     </ScrollView>
 </ContentPage>

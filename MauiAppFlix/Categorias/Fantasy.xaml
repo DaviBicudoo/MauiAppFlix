@@ -2,13 +2,13 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MauiAppFlix.Categorias.Fantasy"
-             Title="Animation"
+             Title="Fantasy"
              BackgroundColor="Black">
     <VerticalStackLayout>
         <ScrollView>
             <Grid RowDefinitions="300, 300, 300" ColumnDefinitions="*, *" Padding="5" >
-                <ImageButton Aspect="AspectFill" Grid.Column="0" Grid.Row="0" Source="" 
-                 x:Name="" />
+                <ImageButton Aspect="AspectFill" Grid.Column="0" Grid.Row="0" Source="hobbit.jpg" 
+                             x:Name="hobbitButton" />
             </Grid>
         </ScrollView>
     </VerticalStackLayout>
