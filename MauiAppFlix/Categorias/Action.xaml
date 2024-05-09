@@ -3,7 +3,7 @@
     x:Class="MauiAppFlix.Categorias.Fantasy"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    Title="Fantasy"
+    Title="Action"
     BackgroundColor="Black">
     <VerticalStackLayout>
         <ScrollView>
@@ -12,27 +12,27 @@
                 ColumnDefinitions="*, *"
                 RowDefinitions="300, 300, 300">
                 <ImageButton
-                    x:Name="btnAvatar"
+                    x:Name="btnAvengers"
                     Grid.Row="0"
                     Grid.Column="0"
                     Aspect="AspectFill"
                     Clicked=""
-                    Source="faa_avatar.jpg" />
+                    Source="act_avengers.jpg" />
                 <ImageButton
-                    x:Name="btnDune"
+                    x:Name="btnMadMax"
                     Grid.Row="0"
                     Grid.Column="1"
-                    Source="faa_dune.jpg" />
+                    Source="act_madmax.jpg" />
                 <ImageButton
-                    x:Name="btnHobbit"
+                    x:Name="btnMorbius"
                     Grid.Row="1"
                     Grid.Column="0"
-                    Source="faa_hobbit.jpg" />
+                    Source="act_morbius.jpg" />
                 <ImageButton
-                    x:Name="btnTheLordOfTheRings"
+                    x:Name="btnRambo"
                     Grid.Row="1"
                     Grid.Column="1"
-                    Source="faa_thelordoftherings.jpg" />
+                    Source="btn_rambo.jpg" />
             </Grid>
         </ScrollView>
     </VerticalStackLayout>

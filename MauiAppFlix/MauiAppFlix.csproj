@@ -92,6 +92,12 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <Compile Update="Categorias\Action.xaml.cs">
+	    <DependentUpon>Action.xaml</DependentUpon>
+	  </Compile>
+	</ItemGroup>
+
+	<ItemGroup>
 	  <MauiXaml Update="Categorias\Animation.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
@@ -101,7 +107,7 @@
 	  <MauiXaml Update="Categorias\Fantasy.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Categorias\Romance.xaml">
+	  <MauiXaml Update="Categorias\Action.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Categorias\Terror.xaml">

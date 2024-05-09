@@ -1,14 +1,39 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="MauiAppFlix.Categorias.Fantasy"
-             Title="Comedy"
-             BackgroundColor="Black">
+<ContentPage
+    x:Class="MauiAppFlix.Categorias.Fantasy"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="Comedy"
+    BackgroundColor="Black">
     <VerticalStackLayout>
         <ScrollView>
-            <Grid RowDefinitions="300, 300, 300" ColumnDefinitions="*, *" Padding="5" >
-                <ImageButton Aspect="AspectFill" Grid.Column="0" Grid.Row="0" Source="" 
-                             x:Name="" />
+            <Grid
+                Padding="5"
+                ColumnDefinitions="*, *"
+                RowDefinitions="300, 300, 300">
+
+                <ImageButton
+                    x:Name="btnBabysDayOut"
+                    Grid.Row="0"
+                    Grid.Column="0"
+                    Aspect="AspectFill"
+                    Clicked=""
+                    Source="cmy_babysdayout.jpg" />
+                <ImageButton
+                    x:Name="btnMIB"
+                    Grid.Row="0"
+                    Grid.Column="1"
+                    Source="cmy_mib.jpg" />
+                <ImageButton
+                    x:Name="btnTheLittleMan"
+                    Grid.Row="1"
+                    Grid.Column="0"
+                    Source="cmy_thelittleman.jpg" />
+                <ImageButton
+                    x:Name="btnWhiteChicks"
+                    Grid.Row="1"
+                    Grid.Column="1"
+                    Source="cmy_whitechicks.jpg" />
             </Grid>
         </ScrollView>
     </VerticalStackLayout>
