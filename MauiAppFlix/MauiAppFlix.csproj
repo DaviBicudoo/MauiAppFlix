@@ -68,6 +68,24 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <MauiImage Remove="Resources\Images\anm_ben10.jpg" />
+	  <MauiImage Remove="Resources\Images\anm_dannyphantom.jpg" />
+	  <MauiImage Remove="Resources\Images\anm_dragonballz.jpg" />
+	  <MauiImage Remove="Resources\Images\anm_onepiece.jpg" />
+	  <MauiImage Remove="Resources\Images\cmy_babysdayout.jpg" />
+	  <MauiImage Remove="Resources\Images\cmy_mib.jpg" />
+	  <MauiImage Remove="Resources\Images\cmy_thelittleman.jpg" />
+	  <MauiImage Remove="Resources\Images\cmy_whitechicks.jpg" />
+	  <MauiImage Remove="Resources\Images\faa_avatar.jpg" />
+	  <MauiImage Remove="Resources\Images\faa_dune.jpg" />
+	  <MauiImage Remove="Resources\Images\faa_hobbit.jpg" />
+	  <MauiImage Remove="Resources\Images\faa_thelordoftherings.jpg" />
+	  <MauiImage Remove="Resources\Images\trr_anabelle.jpg" />
+	  <MauiImage Remove="Resources\Images\trr_chucky.jpg" />
+	  <MauiImage Remove="Resources\Images\war_oppenheimer.jpg" />
+	</ItemGroup>
+
+	<ItemGroup>
 		<PackageReference Include="Microsoft.Maui.Controls" Version="$(MauiVersion)" />
 		<PackageReference Include="Microsoft.Maui.Controls.Compatibility" Version="$(MauiVersion)" />
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="8.0.0" />
@@ -104,10 +122,6 @@
 	  <None Update="Categorias\Documentary.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </None>
-	</ItemGroup>
-
-	<ItemGroup>
-	  <Folder Include="Resources\Images\" />
 	</ItemGroup>
 
 </Project>

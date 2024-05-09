@@ -27,7 +27,7 @@
 
             <Button x:Name="terrorButton" Grid.Row="0" Grid.Column="1" Text="Terror"/>
             <Button x:Name="warButton" Grid.Row="1" Grid.Column="1" Text="War"/>
-            <Button x:Name="romanceButton" Grid.Row="2" Grid.Column="1" Text="Romance"/>
+            <Button x:Name="action" Grid.Row="2" Grid.Column="1" Text="Action"/>
         </Grid>
     </ScrollView>
 </ContentPage>
