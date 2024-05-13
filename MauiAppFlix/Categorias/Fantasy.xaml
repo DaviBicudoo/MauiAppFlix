@@ -9,29 +9,31 @@
         <ScrollView>
             <Grid
                 Padding="5"
-                ColumnDefinitions="*, *"
-                RowDefinitions="300, 300, 300">
+                ColumnDefinitions="300, 300"
+                RowDefinitions="500, 500">
                 <ImageButton
                     x:Name="btnAvatar"
                     Grid.Row="0"
                     Grid.Column="0"
                     Aspect="AspectFill"
-                    Clicked=""
                     Source="faa_avatar.jpg" />
                 <ImageButton
                     x:Name="btnDune"
                     Grid.Row="0"
                     Grid.Column="1"
+                    Aspect="AspectFill"
                     Source="faa_dune.jpg" />
                 <ImageButton
                     x:Name="btnHobbit"
                     Grid.Row="1"
                     Grid.Column="0"
+                    Aspect="AspectFill"
                     Source="faa_hobbit.jpg" />
                 <ImageButton
                     x:Name="btnTheLordOfTheRings"
                     Grid.Row="1"
                     Grid.Column="1"
+                    Aspect="AspectFill"
                     Source="faa_thelordoftherings.jpg" />
             </Grid>
         </ScrollView>

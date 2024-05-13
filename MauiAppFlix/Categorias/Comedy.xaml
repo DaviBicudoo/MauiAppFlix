@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage
-    x:Class="MauiAppFlix.Categorias.Fantasy"
+    x:Class="MauiAppFlix.Categorias.Comedy"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     Title="Comedy"
@@ -9,30 +9,32 @@
         <ScrollView>
             <Grid
                 Padding="5"
-                ColumnDefinitions="*, *"
-                RowDefinitions="300, 300, 300">
+                ColumnDefinitions="300, 300"
+                RowDefinitions="500, 500">
 
                 <ImageButton
                     x:Name="btnBabysDayOut"
                     Grid.Row="0"
                     Grid.Column="0"
                     Aspect="AspectFill"
-                    Clicked=""
                     Source="cmy_babysdayout.jpg" />
                 <ImageButton
                     x:Name="btnMIB"
                     Grid.Row="0"
                     Grid.Column="1"
+                    Aspect="AspectFill"
                     Source="cmy_mib.jpg" />
                 <ImageButton
                     x:Name="btnTheLittleMan"
                     Grid.Row="1"
                     Grid.Column="0"
+                    Aspect="AspectFill"
                     Source="cmy_thelittleman.jpg" />
                 <ImageButton
                     x:Name="btnWhiteChicks"
                     Grid.Row="1"
                     Grid.Column="1"
+                    Aspect="AspectFill"
                     Source="cmy_whitechicks.jpg" />
             </Grid>
         </ScrollView>

@@ -1,38 +1,38 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<ContentPage
-    x:Class="MauiAppFlix.Categorias.Fantasy"
-    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    Title="Action"
-    BackgroundColor="Black">
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAppFlix.Categorias.ActionCategory"
+             Title="Action">
     <VerticalStackLayout>
         <ScrollView>
             <Grid
                 Padding="5"
-                ColumnDefinitions="*, *"
-                RowDefinitions="300, 300, 300">
+                ColumnDefinitions="300, 300"
+                RowDefinitions="500, 500">
                 <ImageButton
                     x:Name="btnAvengers"
                     Grid.Row="0"
                     Grid.Column="0"
                     Aspect="AspectFill"
-                    Clicked=""
                     Source="act_avengers.jpg" />
                 <ImageButton
                     x:Name="btnMadMax"
                     Grid.Row="0"
                     Grid.Column="1"
+                    Aspect="AspectFill"
                     Source="act_madmax.jpg" />
                 <ImageButton
                     x:Name="btnMorbius"
                     Grid.Row="1"
                     Grid.Column="0"
+                    Aspect="AspectFill"
                     Source="act_morbius.jpg" />
                 <ImageButton
                     x:Name="btnRambo"
                     Grid.Row="1"
                     Grid.Column="1"
-                    Source="btn_rambo.jpg" />
+                    Aspect="AspectFill"
+                    Source="act_rambo.jpg" />
             </Grid>
         </ScrollView>
     </VerticalStackLayout>

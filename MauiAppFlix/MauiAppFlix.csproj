@@ -68,21 +68,21 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <MauiImage Remove="Resources\Images\anm_ben10.jpg" />
-	  <MauiImage Remove="Resources\Images\anm_dannyphantom.jpg" />
-	  <MauiImage Remove="Resources\Images\anm_dragonballz.jpg" />
-	  <MauiImage Remove="Resources\Images\anm_onepiece.jpg" />
-	  <MauiImage Remove="Resources\Images\cmy_babysdayout.jpg" />
-	  <MauiImage Remove="Resources\Images\cmy_mib.jpg" />
-	  <MauiImage Remove="Resources\Images\cmy_thelittleman.jpg" />
-	  <MauiImage Remove="Resources\Images\cmy_whitechicks.jpg" />
-	  <MauiImage Remove="Resources\Images\faa_avatar.jpg" />
-	  <MauiImage Remove="Resources\Images\faa_dune.jpg" />
-	  <MauiImage Remove="Resources\Images\faa_hobbit.jpg" />
-	  <MauiImage Remove="Resources\Images\faa_thelordoftherings.jpg" />
-	  <MauiImage Remove="Resources\Images\trr_anabelle.jpg" />
-	  <MauiImage Remove="Resources\Images\trr_chucky.jpg" />
-	  <MauiImage Remove="Resources\Images\war_oppenheimer.jpg" />
+	  <None Remove="Resources\Images\anm_ben10.jpg" />
+	  <None Remove="Resources\Images\anm_dannyphantom.jpg" />
+	  <None Remove="Resources\Images\anm_dragonballz.jpg" />
+	  <None Remove="Resources\Images\anm_onepiece.jpg" />
+	  <None Remove="Resources\Images\cmy_babysdayout.jpg" />
+	  <None Remove="Resources\Images\cmy_mib.jpg" />
+	  <None Remove="Resources\Images\cmy_thelittleman.jpg" />
+	  <None Remove="Resources\Images\cmy_whitechicks.jpg" />
+	  <None Remove="Resources\Images\faa_avatar.jpg" />
+	  <None Remove="Resources\Images\faa_dune.jpg" />
+	  <None Remove="Resources\Images\faa_hobbit.jpg" />
+	  <None Remove="Resources\Images\faa_thelordoftherings.jpg" />
+	  <None Remove="Resources\Images\trr_anabelle.jpg" />
+	  <None Remove="Resources\Images\trr_chucky.jpg" />
+	  <None Remove="Resources\Images\war_oppenheimer.jpg" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -92,22 +92,25 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <Compile Update="Categorias\Action.xaml.cs">
-	    <DependentUpon>Action.xaml</DependentUpon>
+	  <Compile Update="Categorias\ActionCategory.xaml.cs">
+	    <DependentUpon>ActionCategory.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="Categorias\AnimationCategory.xaml.cs">
+	    <DependentUpon>AnimationCategory.xaml</DependentUpon>
 	  </Compile>
 	</ItemGroup>
 
 	<ItemGroup>
-	  <MauiXaml Update="Categorias\Animation.xaml">
+	  <MauiXaml Update="Categorias\ActionCategory.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Categorias\AnimationCategory.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Categorias\Comedy.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Categorias\Fantasy.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </MauiXaml>
-	  <MauiXaml Update="Categorias\Action.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Categorias\Terror.xaml">

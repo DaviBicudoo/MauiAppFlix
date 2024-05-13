@@ -21,13 +21,19 @@
     <ScrollView>
         <Grid RowDefinitions="*, *, *" ColumnDefinitions="*, *"
               VerticalOptions="FillAndExpand" Padding="5">
-            <Button x:Name="fantasyButton" Grid.Row="0" Grid.Column="0" Text="Fantasy and Adventure"/>
-            <Button x:Name="animationButton" Grid.Row="1" Grid.Column="0" Text="Animation"/>
-            <Button x:Name="comedyButton" Grid.Row="2" Grid.Column="0" Text="Comedy"/>
+            <Button x:Name="fantasyButton" Grid.Row="0" Grid.Column="0" Text="Fantasy and Adventure" 
+                    Clicked="fantasyButton_Clicked"/>
+            <Button x:Name="animationButton" Grid.Row="1" Grid.Column="0" Text="Animation"
+                    Clicked="animationButton_Clicked"/>
+            <Button x:Name="comedyButton" Grid.Row="2" Grid.Column="0" Text="Comedy"
+                    Clicked="comedyButton_Clicked"/>
 
-            <Button x:Name="terrorButton" Grid.Row="0" Grid.Column="1" Text="Terror"/>
-            <Button x:Name="warButton" Grid.Row="1" Grid.Column="1" Text="War"/>
-            <Button x:Name="action" Grid.Row="2" Grid.Column="1" Text="Action"/>
+            <Button x:Name="terrorButton" Grid.Row="0" Grid.Column="1" Text="Terror"
+                    Clicked="terrorButton_Clicked"/>
+            <Button x:Name="warButton" Grid.Row="1" Grid.Column="1" Text="War"
+                    Clicked="warButton_Clicked"/>
+            <Button x:Name="action" Grid.Row="2" Grid.Column="1" Text="Action"
+                    Clicked="action_Clicked"/>
         </Grid>
     </ScrollView>
 </ContentPage>

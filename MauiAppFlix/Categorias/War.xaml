@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage
-    x:Class="MauiAppFlix.Categorias.Fantasy"
+    x:Class="MauiAppFlix.Categorias.War"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     Title="War"
@@ -9,30 +9,32 @@
         <ScrollView>
             <Grid
                 Padding="5"
-                ColumnDefinitions="*, *"
-                RowDefinitions="300, 300, 300">
+                ColumnDefinitions="300, 300"
+                RowDefinitions="500, 500">
 
                 <ImageButton
                     x:Name="btnIronHeart"
                     Grid.Row="0"
                     Grid.Column="0"
                     Aspect="AspectFill"
-                    Clicked=""
                     Source="war_ironheart.jpg" />
                 <ImageButton
                     x:Name="btnOppenheimer"
                     Grid.Row="0"
                     Grid.Column="1"
+                    Aspect="AspectFill"
                     Source="war_oppenheimer.jpg" />
                 <ImageButton
                     x:Name="btnPearlHarbor"
                     Grid.Row="1"
                     Grid.Column="0"
+                    Aspect="AspectFill"
                     Source="war_pearlharbor.jpg" />
                 <ImageButton
                     x:Name="btnSavingPrivateRyan"
                     Grid.Row="1"
                     Grid.Column="1"
+                    Aspect="AspectFill"
                     Source="war_savingprivateryan.jpg" />
             </Grid>
         </ScrollView>
