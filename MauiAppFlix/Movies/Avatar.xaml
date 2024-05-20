@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAppFlix.Movies.Avatar"
+             Title="Avatar"
+             BackgroundColor="Black">
+    <Grid RowDefinitions="*, *" ColumnDefinitions="*">
+        <WebView Grid.Column="0" Grid.Row="0" Source="https://www.youtube.com/embed/5PSNL1qE6VY?si=XSn6dFKt9rNKnrMh" />
+
+        <ScrollView Grid.Row="1" Grid.Column="0">
+            <Grid RowDefinitions="*, *" ColumnDefinitions="*, *">
+                <Image Grid.Column="0" Grid.Row="0" 
+                   x:Name="poster" HeightRequest="300" />
+                <StackLayout VerticalOptions="CenterAndExpand" 
+                         Grid.Column="1" Grid.Row="0">
+                    <Label Text="Release date" TextColor="White" Style="{StaticResource title}" 
+                           FontSize="Title" />
+
+                    <Label Text="18/12/2009" TextColor="White" Style="{StaticResource textTitle}" 
+                           FontSize="Subtitle"/>
+
+
+                    <Label Text="Direction" TextColor="White" Margin="0, 20, 0, 0" 
+                           Style="{StaticResource titulo}" FontFamily="Tahoma" FontSize="Title"/>
+                    <Label Text="James Cameron" TextColor="White" Style="{StaticResource textTitle}" 
+                           FontFamily="Tahoma" FontSize="Subtitle"/>
+                </StackLayout>
+                <StackLayout Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="1">
+
+                    <Label Text="SINOPSE" TextColor="White" Style="{StaticResource title}" FontSize="Header" FontFamily="Tahoma"/>
+
+                    <Label x:Name="Sinopse" TextColor="White" Text="On the lush alien world of Pandora live the Na'vi, beings who appear primitive but are highly evolved. Because the planet's environment is poisonous, human/Na'vi hybrids, called Avatars, must link to human minds to allow for free movement on Pandora. Jake Sully, a paralyzed former Marine, becomes mobile again through one such Avatar and falls in love with a Na'vi woman. As a bond with her grows, he is drawn into a battle for the survival of her world."
+                           FontSize="Medium" Padding="5" FontFamily="Tahoma"/>
+
+                </StackLayout>
+            </Grid>
+        </ScrollView>
+    </Grid>
+</ContentPage>

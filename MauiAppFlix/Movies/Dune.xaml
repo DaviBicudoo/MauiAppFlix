@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAppFlix.Movies.Dune"
+             Title="Dune"
+             BackgroundColor="Black">
+    <Grid RowDefinitions="*, *" ColumnDefinitions="*">
+        <WebView Grid.Column="0" Grid.Row="0" Source="https://www.youtube.com/embed/U2Qp5pL3ovA?si=1jupOwo1ZjOX8Avt" />
+
+        <ScrollView Grid.Row="1" Grid.Column="0">
+            <Grid RowDefinitions="*, *" ColumnDefinitions="*, *">
+                <Image Grid.Column="0" Grid.Row="0" 
+               x:Name="poster" HeightRequest="300" />
+                <StackLayout VerticalOptions="CenterAndExpand" 
+                     Grid.Column="1" Grid.Row="0">
+                    <Label Text="Release date" TextColor="White" Style="{StaticResource title}" 
+                       FontSize="Title" />
+
+                    <Label Text="18/12/2009" TextColor="White" Style="{StaticResource textTitle}" 
+                       FontSize="Subtitle"/>
+
+
+                    <Label Text="Direction" TextColor="White" Margin="0, 20, 0, 0" 
+                       Style="{StaticResource titulo}" FontFamily="Tahoma" FontSize="Title"/>
+                    <Label Text="Denis Villeneuve" TextColor="White" Style="{StaticResource textTitle}" 
+                       FontFamily="Tahoma" FontSize="Subtitle"/>
+                </StackLayout>
+                <StackLayout Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="1">
+
+                    <Label Text="SINOPSE" TextColor="White" Style="{StaticResource title}" FontSize="Header" FontFamily="Tahoma"/>
+
+                    <Label x:Name="Sinopse" TextColor="White" Text="Following the fall of House Atreides in Duna (2021), exiled Duke Paul Atreides continues his journey of enlightenment in the barren deserts of Arrakis. Soon, the noble son embraces the ways of the blue-eyed Fremen warriors, unaware that rumours about the prophesied Dune Messiah divide the tribe. After all, the suffocating grip of House Harkonnen tightens by the minute, ushering in a brutal era of war over the control of the planet and its vast spice-rich fields. But above all else, water is life. As shrewd machinators plot destruction and death, the volatile future demands the emergence of a new leader. Now caught between personal hopes and the aspirations of others, will Paul become the fighter he always wanted to be?"
+                       FontSize="Medium" Padding="5" FontFamily="Tahoma"/>
+
+                </StackLayout>
+            </Grid>
+        </ScrollView>
+    </Grid>
+</ContentPage>

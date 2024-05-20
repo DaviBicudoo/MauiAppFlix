@@ -16,25 +16,29 @@
                     Grid.Row="0"
                     Grid.Column="0"
                     Aspect="AspectFill"
-                    Source="faa_avatar.jpg" />
+                    Source="faa_avatar.jpg"
+                    Clicked="btnAvatar_Clicked"/>
                 <ImageButton
                     x:Name="btnDune"
                     Grid.Row="0"
                     Grid.Column="1"
                     Aspect="AspectFill"
-                    Source="faa_dune.jpg" />
+                    Source="faa_dune.jpg"
+                    Clicked="btnDune_Clicked"/>
                 <ImageButton
                     x:Name="btnHobbit"
                     Grid.Row="1"
                     Grid.Column="0"
                     Aspect="AspectFill"
-                    Source="faa_hobbit.jpg" />
+                    Source="faa_hobbit.jpg"
+                    Clicked="btnHobbit_Clicked"/>
                 <ImageButton
                     x:Name="btnTheLordOfTheRings"
                     Grid.Row="1"
                     Grid.Column="1"
                     Aspect="AspectFill"
-                    Source="faa_thelordoftherings.jpg" />
+                    Source="faa_thelordoftherings.jpg" 
+                    Clicked="btnTheLordOfTheRings_Clicked"/>
             </Grid>
         </ScrollView>
     </VerticalStackLayout>

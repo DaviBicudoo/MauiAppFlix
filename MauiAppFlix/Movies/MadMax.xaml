@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAppFlix.Movies.MadMax"
+             Title="MadMax"
+             BackgroundColor="Black">
+    <Grid RowDefinitions="*, *" ColumnDefinitions="*">
+        <WebView Grid.Column="0" Grid.Row="0" Source="https://www.youtube.com/embed/hEJnMQG9ev8?si=cQakj4tt-A3mrzSe" />
+
+        <ScrollView Grid.Row="1" Grid.Column="0">
+            <Grid RowDefinitions="*, *" ColumnDefinitions="*, *">
+                <Image Grid.Column="0" Grid.Row="0" 
+       x:Name="poster" HeightRequest="300" />
+                <StackLayout VerticalOptions="CenterAndExpand" 
+             Grid.Column="1" Grid.Row="0">
+                    <Label Text="Release date" TextColor="White" Style="{StaticResource title}" 
+               FontSize="Title" />
+
+                    <Label Text="15/05/2015" TextColor="White" Style="{StaticResource textTitle}" 
+               FontSize="Subtitle"/>
+
+
+                    <Label Text="Direction" TextColor="White" Margin="0, 20, 0, 0" 
+               Style="{StaticResource titulo}" FontFamily="Tahoma" FontSize="Title"/>
+                    <Label Text="George Miller" TextColor="White" Style="{StaticResource textTitle}" 
+               FontFamily="Tahoma" FontSize="Subtitle"/>
+                </StackLayout>
+                <StackLayout Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="1">
+
+                    <Label Text="SINOPSE" TextColor="White" Style="{StaticResource title}" FontSize="Header" FontFamily="Tahoma"/>
+
+                    <Label x:Name="Sinopse" TextColor="White" Text="In the stark desert wasteland populated by a broken humanity driven with survival and the unending ravage for gasoline, a loner named Max finds himself unwantedly caught in the middle of a chase while aiding the heroine Furiosa and her female companions. She struggles to return to her homeland and escape the clutches of a ruthless desert gang leader, Immortal Joe. With the harsh desert sands in front of them and marauders behind, only the maddest will prevail the storm."
+               FontSize="Medium" Padding="5" FontFamily="Tahoma"/>
+
+                </StackLayout>
+            </Grid>
+        </ScrollView>
+    </Grid>
+</ContentPage>

@@ -17,7 +17,7 @@
                     Grid.Row="0"
                     Grid.Column="0"
                     Aspect="AspectFill"
-                    Source="war_ironheart.jpg" />
+                    Source="war_ironheart.jpeg" />
                 <ImageButton
                     x:Name="btnOppenheimer"
                     Grid.Row="0"

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAppFlix.Movies.TheLordOfTheRings"
+             Title="The Lord Of The Rings: The Return of the King"
+             BackgroundColor="Black">
+    <Grid RowDefinitions="*, *" ColumnDefinitions="*">
+        <WebView Grid.Column="0" Grid.Row="0" Source="https://www.youtube.com/embed/r5X-hFf6Bwo?si=Hu42omfm3u3dSlbf" />
+
+        <ScrollView Grid.Row="1" Grid.Column="0">
+            <Grid RowDefinitions="*, *" ColumnDefinitions="*, *">
+                <Image Grid.Column="0" Grid.Row="0" 
+       x:Name="poster" HeightRequest="300" />
+                <StackLayout VerticalOptions="CenterAndExpand" 
+             Grid.Column="1" Grid.Row="0">
+                    <Label Text="Release date" TextColor="White" Style="{StaticResource title}" 
+               FontSize="Title" />
+
+                    <Label Text="01/12/2003" TextColor="White" Style="{StaticResource textTitle}" 
+               FontSize="Subtitle"/>
+
+
+                    <Label Text="Direction" TextColor="White" Margin="0, 20, 0, 0" 
+               Style="{StaticResource titulo}" FontFamily="Tahoma" FontSize="Title"/>
+                    <Label Text="Peter Jackson" TextColor="White" Style="{StaticResource textTitle}" 
+               FontFamily="Tahoma" FontSize="Subtitle"/>
+                </StackLayout>
+                <StackLayout Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="1">
+
+                    <Label Text="SINOPSE" TextColor="White" Style="{StaticResource title}" FontSize="Header" FontFamily="Tahoma"/>
+
+                    <Label x:Name="Sinopse" TextColor="White" Text="Gondor is overrun by the orcs of Mordor, and Gandalf rides to Minas Tirith to aid the humans in the war that is ahead. Aragorn must realize his true identity and purpose as the King of Men, and journey with Gimli and Legolas to summon the Army of the Dead so that the battle against evil can be won. Meanwhile, paranoia and suspicion rises between Frodo, Sam, and Gollum as they continue their increasingly dark and dangerous travel to Mount Doom, the one place where the One Ring can be destroyed once and for all."
+               FontSize="Medium" Padding="5" FontFamily="Tahoma"/>
+
+                </StackLayout>
+            </Grid>
+        </ScrollView>
+    </Grid>
+</ContentPage>
