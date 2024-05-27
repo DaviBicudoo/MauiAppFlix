@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAppFlix.Movies.TheBabadook"
+             Title="TheBabadook"
+             BackgroundColor="Black">
+    <Grid RowDefinitions="*, *" ColumnDefinitions="*">
+        <WebView Grid.Column="0" Grid.Row="0" Source="***" />
+
+        <ScrollView Grid.Row="1" Grid.Column="0">
+            <Grid RowDefinitions="*, *" ColumnDefinitions="*, *">
+                <Image Grid.Column="0" Grid.Row="0" 
+   x:Name="poster" HeightRequest="300" />
+                <StackLayout VerticalOptions="CenterAndExpand" 
+         Grid.Column="1" Grid.Row="0">
+                    <Label Text="Release date" TextColor="White" Style="{StaticResource title}" 
+           FontSize="Title" />
+
+                    <Label Text="17/01/2014" TextColor="White" Style="{StaticResource textTitle}" 
+           FontSize="Subtitle"/>
+
+
+                    <Label Text="Direction" TextColor="White" Margin="0, 20, 0, 0" 
+           Style="{StaticResource titulo}" FontFamily="Tahoma" FontSize="Title"/>
+                    <Label Text="Jennifer Kent" TextColor="White" Style="{StaticResource textTitle}" 
+           FontFamily="Tahoma" FontSize="Subtitle"/>
+                </StackLayout>
+                <StackLayout Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="1">
+
+                    <Label Text="SINOPSE" TextColor="White" Style="{StaticResource title}" FontSize="Header" FontFamily="Tahoma"/>
+
+                    <Label x:Name="Sinopse" TextColor="White" Text="Six years after the violent death of her husband, Amelia is at a loss. She struggles to discipline her 'out of control' 6 year-old, Samuel, a son she finds impossible to love. Samuel's dreams are plagued by a monster he believes is coming to kill them both. When a disturbing storybook called 'The Babadook' turns up at their house, Samuel is convinced that the Babadook is the creature he's been dreaming about. His hallucinations spiral out of control, he becomes more unpredictable and violent. Amelia, genuinely frightened by her son's behaviour, is forced to medicate him. But when Amelia begins to see glimpses of a sinister presence all around her, it slowly dawns on her that the thing Samuel has been warning her about may be real."
+           FontSize="Medium" Padding="5" FontFamily="Tahoma"/>
+
+                </StackLayout>
+            </Grid>
+        </ScrollView>
+    </Grid>
+</ContentPage>

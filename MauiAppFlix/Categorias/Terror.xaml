@@ -16,19 +16,22 @@
                     Grid.Row="0"
                     Grid.Column="0"
                     Aspect="AspectFill"
-                    Source="trr_anabelle.jpg" />
+                    Source="trr_anabelle.jpg"
+                    Clicked="btnAnabelle_Clicked"/>
                 <ImageButton
                     x:Name="btnChucky"
                     Grid.Row="0"
                     Grid.Column="1"
                     Aspect="AspectFill"
-                    Source="trr_chucky.jpg" />
+                    Source="trr_chucky.jpg" 
+                    Clicked="btnChucky_Clicked"/>
                 <ImageButton
                     x:Name="btnBabadook"
                     Grid.Row="1"
                     Grid.Column="0"
                     Aspect="AspectFill"
-                    Source="trr_babadook.jpg" />
+                    Source="trr_babadook.jpg" 
+                    Clicked="btnBabadook_Clicked"/>
                 <ImageButton
                     x:Name="btnHalloween"
                     Grid.Row="1"

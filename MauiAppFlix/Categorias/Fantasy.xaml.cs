@@ -6,6 +6,7 @@ public partial class Fantasy : ContentPage
 	{
 		InitializeComponent();
 	}
+
     private void btnAvatar_Clicked(object sender, EventArgs e)
     {
         try
