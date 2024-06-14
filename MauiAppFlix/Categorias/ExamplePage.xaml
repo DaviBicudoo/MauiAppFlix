@@ -16,7 +16,7 @@
                     <Label Text="Release date" TextColor="White" Style="{StaticResource title}" 
                    FontSize="Title" />
 
-                    <Label Text="*******" TextColor="White" Style="{StaticResource textTitle}" 
+                    <Label Text="********" TextColor="White" Style="{StaticResource textTitle}" 
                    FontSize="Subtitle"/>
 
 
